@@ -1,0 +1,609 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+
+
+header {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    & .search-bar {
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 5px;
+        border: 1px solid #D9D9D9;
+        border-left: 0;
+        & input {
+            font-family: 'Lato';
+            width: 150px;
+            font-size: 16px;
+            padding: 1px 2px 2px 16px;
+            border: 0;
+            &:focus {
+                outline: none;
+            }
+        }
+        & i {
+            padding: 5px 10px;
+            font-size: 16px;
+            color: #999999;
+        }
+
+    }
+    & a {
+        color: #1a1a1a;
+        & i {
+        font-size: 24px;
+        padding: 4px;
+        }
+    }
+}
+
+.section-intro {
+    background-color: #9FD9DD;
+    display: flex;
+    padding: 0px 18%;
+    & .text-section {
+        width: 50%;
+        color: #fff;
+        padding: 30px;
+        & .title {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 96px;
+            font-family: 'Lato';
+            line-height: 1.1;
+        }
+        & .subtitle {
+            font-size: 24px;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            margin-top: -10px;
+        }
+        & .text {
+            margin-top: 70px;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+        & .copyright {
+            font-size: 16px;
+            margin-top: 20px;
+            & a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: 700;
+                border-bottom: 2px solid #fff;
+                &:hover {
+                    color: #E6E6E6;
+                    border: 0;
+                }
+            }
+        }
+        & a {
+            & button {
+                margin-top: 45px;
+                background-color: #daebea;
+                padding: 15px 52px;
+                font-size: 16px;
+                text-transform: uppercase;
+                font-family: 'Lato';
+                font-weight: 700;
+                letter-spacing: 2px;
+                border: 0;
+                &:hover {
+                    cursor: pointer;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    & .image-section {
+        width: 550px;
+        height: 670px;
+        display: flex;
+        background-image: url(../images/med-image-1.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+        background-clip: padding-box;
+        background-origin: padding-box;
+    }
+}
+
+.section-services {
+    text-align: center;
+    & .title {
+        margin-top: 80px;
+        font-size: 48px;
+        font-family: 'Lato';
+        color: #A8CECC;
+        font-weight: 700;
+    }
+    & .subtitle {
+        margin-top: 20px;
+        color: #808080;
+        font-size: 20px;
+
+    }
+    & .services {
+        margin-top: 50px;
+        margin-bottom: 170px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        & .service-item {
+            position: relative;
+            width: 21%;
+            border: 1px solid #A8CECC;
+            padding: 0 29px 20px;
+            & .service-icon {
+                margin-top: -25px;
+                text-align: center;
+                width: 85px;
+                height: 85px;
+                color: #A8CECC;
+                font-size: 50px;
+                background-color: #fff;
+                box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
+                border-radius: 50%;
+                & i {
+                    margin-top: 19px;
+                    margin-left: 3px;
+                }
+            }
+            & .service-name {
+                margin: 20px 1px 0px 1px;
+                font-size: 20px;
+                font-family: 'Roboto';
+                color: #A8CECC;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+            & .service-text {
+                color: #111111;
+                margin: 20px 1px 0 1px;
+
+            }
+        }
+    }
+}
+
+.section-tests {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    
+    & .test-title {
+        width: 49%;
+        margin-right: 20px;
+        & .title {
+            font-weight: 100;
+            font-size: 60px;
+            color: #A8CECC;
+            margin-bottom: 50px;
+            & b {
+                font-weight: 700;
+            }
+        }
+        & .img-b {
+            height: 470px;
+            width: 100%;
+            display: flex;
+            background-image: url(../images/med-image-2b.jpeg);
+            background-size: cover;
+            background-position: 50% 40%;
+            box-sizing: border-box;
+        }
+    }
+    & .test-desc {
+        width: 49%;
+        margin: 0px 20px;
+        padding: 0px 15px;
+        & .desc-title {
+            font-family: 'lato';
+            font-size: 30px;
+            color: #A8CECC;
+            font-weight: 700;
+        }
+        & .desc-text {
+            line-height: 1.6;
+            margin-top: 20px;
+            font-size: 20px;
+
+        }
+        & a {
+            & button {
+                margin-top: 30px;
+                background-color: #daebea;
+                padding: 15px 52px;
+                font-size: 16px;
+                text-transform: uppercase;
+                font-family: 'Lato';
+                font-weight: 700;
+                letter-spacing: 2px;
+                border: 0;
+                &:hover {
+                    cursor: pointer;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    & .tests {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 125px;
+        & .img-s {
+            width: 40%;
+            height: 245px;
+            background-image: url(../images/med-image-2s.jpeg);
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+        & .s-desc {
+            padding: 20px 30px;
+            width: 50%;
+            & .test-name {
+                font-size: 20px;
+                color: #A8CECC;
+                font-family: 'Roboto';
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 2px;
+            }
+            & .test-text {
+                margin-top: 20px;
+            }
+            & .copyright {
+                font-size: 14px;
+                margin-top: 20px;
+                & a {
+                    color: #111111;
+                    text-decoration: none;
+                    border-bottom: 1px solid #111111;
+                    &:hover {
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section-color {
+    display: flex;
+    margin-top: 50px;
+    padding-bottom: 200px;
+    padding-top: 50px;
+    background-color: #C0DDDB;
+    color: #fff;
+    & .upper-sect{
+        width: 50%;
+        padding: 30px 60px 30px 30px;
+        & h1 {
+           margin: 0;
+           font-size: 48px;
+           font-family: 'Lato'; 
+        }
+        & h2 {
+            margin-top: 17px;
+            font-size: 140px;
+            font-family: 'Roboto';
+        }
+    }
+    & .lower-sect {
+        padding: 30px;
+        width: 50%;
+        & i {
+            margin-top: 130px;
+            margin-left: 70%;
+            font-size: 220px;
+        }
+        & .text {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    }
+}
+
+.section-cards {
+    position: relative;
+    margin-bottom: 300px;
+    & .cards {
+        position: absolute;
+        top: -150px;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        & .card{
+            width: 24%;
+            background-color: #F5FAFA;
+            border-top: 15px solid #7D9A99;
+            & .number {
+                margin: 20px 11px -10px 11px;
+                font-size: 72px;
+                color: #A8CECC;
+                font-family: 'Montserrat';
+                font-weight: 700;
+            }
+            & .number-name {
+                font-family: 'Roboto';
+                font-size: 20px;
+                text-transform: uppercase;
+                color: #A8CECC;
+                font-weight: 700;
+                letter-spacing: 2px;
+            }
+            & .text {
+                margin: 20px 11px;
+                font-family: 'Open Sans';
+            }
+        }
+    }
+}
+
+.section-posts {
+    text-align: center;
+    & .section-title {
+        margin-top: 60px;
+        font-size: 48px;
+        font-family: 'Lato';
+        color: #A8CECC;
+        font-weight: 700;
+    }
+    & .section-subtitle {
+        margin: 20px 30% 0px;
+        font-size: 20px;
+    }
+    & .posts {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        width: 100%;
+        & .post {
+            padding: 30px 30px 14px;
+            width: 29%;
+            border: 1px solid #A8CECC;
+            & .post-img1 {
+                width: 100%;
+                height: 210px;
+                display: block;
+                background-image: url(../images/med-img-3a.jpg);
+                background-size: cover;
+                background-position: 50% 50%;
+                margin: 0;
+            }
+            & .post-img2 {
+                width: 100%;
+                height: 210px;
+                display: block;
+                background-image: url(../images/med-img-3b.jpg);
+                background-size: cover;
+                background-position: 50% 50%;
+                margin: 0;
+            }
+            & .post-img3 {
+                width: 100%;
+                height: 210px;
+                display: block;
+                background-image: url(../images/med-img-3c.jpg);
+                background-size: cover;
+                background-position: 50% 50%;
+                margin: 0;
+            }
+            & .post-num {
+                font-size: 48px;
+                text-align: left;
+                margin-top: 20px;
+                font-weight: 700;
+                font-family: 'Open Sans';
+                color: #A8CECC;
+            }
+            & .post-text {
+                text-align: left;
+                padding-bottom: 20px;
+                margin-top: -50px;
+                margin-left: 40px;
+                color: #808080;
+            }
+        }
+    }
+    & .copyright {
+        margin: 20px 0 60px;
+        color: #A8CECC;
+        font-weight: 500;
+        & a {
+            color: #A8CECC;
+            text-decoration: none;
+            border-bottom: 1px solid #A8CECC;
+            &:hover {
+                border: 0;
+                color: #93C3C0;
+            }
+        }
+    }
+}
+
+.section-service {
+    display: flex;
+    height: 450px;
+    width: 100%;
+    background-color: #A8CECC;
+    & .services-img1 {
+        display: block;
+        width: 33%;
+        height: 100%;
+        background-image: url(../images/med-img-4a.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    & .services-text {
+        width: 33%;
+        padding: 30px;
+        color: #fff;
+        & i {
+            margin-top: 60px;
+            font-size: 40px;
+        }
+        & .services-title {
+            padding: 0;
+            font-size: 48px;
+            font-family: 'Montserrat';
+            font-weight: 700;
+        }
+        & .service-desc {
+            text-align: justify;
+            font-size: 16px;
+        }
+        & a{
+            
+            & button {
+                margin-top: 32px;
+                padding: 10px 52px;
+                font-size: 16px;
+                font-family: 'Lato';
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 2px;
+                border: 0;
+                background-color: #daebea;
+                &:hover {
+                    background-color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    & .services-img2{
+        display: block;
+        width: 33%;
+        height: 100%;
+        background-image: url(../images/med-image-2s.jpeg);
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+}
+
+.section-structure {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0px;
+    background-color: #536766;
+    text-align: center;
+    & .structure-desc {
+        color: #fff;
+        padding: 10;
+        width: 24%;
+        & i {
+            color: #A8CECC;
+            font-size: 48px;
+        }
+        & .structure-title {
+            font-size: 20px;
+            font-family: 'Roboto';
+            text-transform: uppercase;
+
+            margin-top: 20px;
+        }
+        & .structure-text {
+            margin: 20px 16px 0px;
+        }
+    }
+}
+
+.section-contacts {
+    padding: 60px 0px;
+    & .call-us {
+        width: 100%;
+        display: flex;
+        margin-bottom: 60px;
+        & .call-img {
+            width: 70%;
+            height: 607px;
+            background-image: url(../images/med-img-5.jpeg);
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+        & .call-info {
+            width: 30%;
+            padding: 50px 30px 60px;
+            vertical-align: middle;
+            & .numbers {
+                margin-top: 100px;
+                font-size: 48px;
+                font-family: 'Montserrat';
+                color: #A8CECC;
+                font-weight: 700;
+                line-height: 1;
+            }
+            & .address {
+                font-size: 20px;
+                font-family: 'Roboto';
+                margin-top: 20px;
+            }
+            & .call-text {
+                margin-top: 35px;
+                font-weight: 600;
+                line-height: 1.5;
+            }
+            & a{
+                & button {
+                    margin-top: 20px;
+                    padding: 10px 52px;
+                    font-size: 16px;
+                    font-family: 'Lato';
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                    border: 0;
+                    background-color: #daebea;
+                    &:hover {
+                        background-color: #fff;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    & .contacts {
+        width: 100%;
+        display: flex;
+        background-color: #A8CECC;
+        color: #fff;
+        & .contact-info {
+            width: 33%;
+            padding: 45px 30px 23px;
+            & i {
+                font-size: 22px;
+            }
+            & .title {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 20px;
+                font-family: 'Roboto';
+                margin-top: -22px;
+                margin-left: 35px;
+            }
+            & .text {
+                margin-top: 20px;
+            }
+        }
+        
+    }
+}
+
+footer {
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    & .footer-text {
+        padding: 50px 40%;
+        font-size: 14px;
+    }
+}
