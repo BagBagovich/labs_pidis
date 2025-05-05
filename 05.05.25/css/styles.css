@@ -1,0 +1,456 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+    color: #fff;
+}
+
+.intro-title, .intro-suptitle{
+    font-family: 'Montserrat';
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+section {
+    background-color: #1a1a1a;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 14%;
+    background-color: black;
+    & a{ 
+        & .logo {
+            margin-left: -150px;
+            width: 130px;
+        }
+        & button {
+            padding: 12px 30px;
+            font-size: 16px;
+            border: 0;
+            background-color: #b8a269;
+            font-weight: 700;
+            color: #fff;
+            &:hover{
+                background-color: #8C7E5A;
+                cursor: pointer;
+            }
+        }
+    }
+    & .menu {
+        margin-left: 100px;
+        & a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            text-transform: uppercase;
+            padding: 6px 0px;
+            margin: 0px 10px;
+            & .active {
+                color: #b8a269;
+                border-bottom: 2px solid #b8a269;
+            }
+            &:hover {
+                color: #b8a269;
+                border-bottom: 2px solid #b8a269;
+            }
+        }
+    }
+}
+
+.section-intro {
+    width: 100%;
+    padding: 200px 0px;
+    height: calc(100vh-);
+    text-align: center;
+    background-image: url(../images/bg-intro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    & .intro-suptitle {
+        font-size: 20px;
+        margin: 20px 0px 0px;
+    }
+    & .intro-title {
+        padding: 0;
+        font-size: 90px;
+        margin-top: -30px;
+    }
+    & a {
+        & button {
+            padding: 18px 42px;
+            font-size: 16px;
+            border: 0;
+            background-color: #b8a269;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            &:hover{
+                background-color: #fff;
+                color: #b8a269;
+                cursor: pointer;
+            }
+        }
+    }
+    & .copyright {
+        margin-top: 45px;
+        margin-bottom: 60px;
+        & a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid #fff;
+            &:hover {
+                color: #e6e6e6;
+            }
+        }
+    }
+    
+}
+
+.section-preservice {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding-bottom: 60px;
+    & .title{
+        font-size: 48px;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        padding-top: 20px;
+    }
+    & .preservice {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 45px;
+        padding: 0px 11%;
+        & .preservice-img{
+            width: 550px;
+            height: 525px;
+            background-image: url(../images/img-pres.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+        & .preservice-cards {
+            display: flex;
+            justify-content: space-between;
+            align-content: space-between;
+            flex-wrap: wrap;
+            width: 750px;
+            height: 525px;
+            & .preservice-card{
+                background-color: #b8a269;
+                width: 40%;
+                height: 36%;
+                padding: 30px;
+                & img {
+                    margin-top: 20px;
+                    width: 85px;
+                }
+                & .preservice-name {
+                    font-family: 'Montserrat';
+                    font-size: 24px;
+                    margin: 30px 0px 10px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    & .copyright {
+        margin-top: 45px;
+        & a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid #b8a269;
+            &:hover {
+                color: #e6e6e6;
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
+}
+
+.section-services {
+    padding-bottom: 60px;
+    text-align: center;
+    & .title {
+        font-family: 'Montserrat';
+        font-size: 48px;
+        font-weight: 700;
+    }
+    & .service-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: auto;
+        margin: 0 10%;
+        & .service-card {
+            align-items: center;
+            padding-bottom: 50px;
+            width: 25%;
+            & .s-img1, .s-img2, .s-img3, .s-img4, .s-img5, .s-img6, .s-img7, .s-img8{
+                width: 348px;
+                height: 309px;
+                background-size: cover;
+                background-position: 50% 50%;
+            }
+            & .s-img1{
+                background-image: url(../images/service-1.jpg);
+            }
+            & .s-img2{
+                background-image: url(../images/service-2.jpg);
+            }
+            & .s-img3{
+                background-image: url(../images/service-3.jpg);
+            }
+            & .s-img4{
+                background-image: url(../images/service-4.jpg);
+            }
+            & .s-img5{
+                background-image: url(../images/service-5.jpg);
+            }
+            & .s-img6{
+                background-image: url(../images/service-6.jpg);
+            }
+            & .s-img7{
+                background-image: url(../images/service-7.jpg);
+            }
+            & .s-img8{
+                background-image: url(../images/service-8.jpg);
+            }
+            & .service-name {
+                font-size: 24px;
+                font-family: 'Montserrat';
+                font-weight: 700;
+                margin-top: 47px;
+                margin-right: 50px;
+            }
+            & .service-price {
+                color: #b8a269;
+                font-weight: 700;
+                margin-top: 10px;
+                margin-right: 50px;
+            }
+        }
+    }
+    & .copyright {
+        margin-top: 35px;
+        & a {
+            color: #111111;
+            text-decoration: none;
+            border-bottom: 1px solid #000000;
+            &:hover {
+                color: #000000;
+                border-bottom: 1px solid #ECB321;
+            }
+        }
+    }
+}
+
+.section-benefits {
+    padding-bottom: 60px;
+    text-align: center;
+    & .title {
+        font-family: 'Montserrat';
+        font-size: 48px;
+        font-weight: 700;
+    }
+    & .benefit-cards {
+        display: flex;
+        & .benefit-card1 {
+            width: 33%;
+            display: block;
+            height: 490px;
+            padding: 30px;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/benefit-1.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            & .benefit-name {
+                width: 60%;
+                text-align: left;
+                margin-top: 400px;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-family: 'Montserrat';
+                font-size: 20px;
+                padding-top: 20px;
+                border-top: 5px solid rgba(255, 255, 255, 0.5);
+            }
+        }
+        & .benefit-card2 {
+            width: 33%;
+            display: block;
+            height: 490px;
+            padding: 30px;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/benefit-2.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            & .benefit-name {
+                width: 60%;
+                text-align: left;
+                margin-top: 400px;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-family: 'Montserrat';
+                font-size: 20px;
+                padding-top: 20px;
+                border-top: 5px solid rgba(255, 255, 255, 0.5);
+            }
+        }
+        & .benefit-card3 {
+            width: 33%;
+            display: block;
+            height: 490px;
+            padding: 30px;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/benefit-3.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            & .benefit-name {
+                width: 60%;
+                text-align: left;
+                margin-top: 400px;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-family: 'Montserrat';
+                font-size: 20px;
+                padding-top: 20px;
+                border-top: 5px solid rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+    & .copyright {
+        font-style: italic;
+        margin-top: 30px;
+        & a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid #fff;
+            &:hover {
+                color: #e6e6e6;
+                border-bottom: 1px solid #b8a269;
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: #000000;
+    padding: 60px 10%;
+    & .footer-items {
+        width: 100%;
+        display: flex;
+        & .workhours {
+            width: 33%;
+            padding: 30px;
+            & img {
+                width: 118px;
+            }
+            & .text {
+                margin-top: 20px;
+                & a {
+                    color: #fff;
+                    text-decoration: none;
+                    border-bottom: 1px solid #fff;
+                    &:hover {
+                        color: #e6e6e6;
+                        border-bottom: 1px solid #b8a269;
+                    }
+                    
+                }
+            }
+            & .weekday-hrs {
+                font-size: 18px;
+                padding: 0 15%;
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                & .weekdays {
+                    font-weight: 700;
+                }
+            }
+            & .weekend-hrs {
+                font-size: 18px;
+                padding: 0 15%;
+                margin-top: 5px;
+                display: flex;
+                justify-content: space-between;
+                & .weekends {
+                    font-weight: 700;
+                }
+            }
+        }
+        & .contacts {
+            width: 33%;
+            padding: 30px;
+            & .title {
+                font-family: 'Montserrat';
+                font-size: 24px;
+                font-weight: 700;
+                margin-top: -10px;
+            }
+            & .address {
+                margin-top: 10px;
+                font-size: 20px;
+                margin-bottom: 40px;
+            }
+            & a {
+                font-size: 20px;
+                color: #b8a269;
+                text-decoration: none;
+                font-weight: 700;
+                line-height: 1.6;
+            }
+            & .socials {
+                display: flex;
+                justify-content: space-between;
+                padding: 0px 35%;
+                margin-top: 20px;
+                & a {
+                    font-size: 26px;
+                }
+            }
+        }
+        & .feedback {
+            width: 33%;
+            padding: 30px;
+            & img {
+                width: 64px;
+            }
+            & .title {
+                font-size: 24px;
+                margin-top: 10px;
+                font-family: 'Montserrat';
+                font-weight: 700;
+            }
+            & .text {
+                font-size: 20px;
+                margin-top: 10px;
+            }
+            & a {
+                & button {
+                    margin-top: 30px;
+                    padding: 17px 49px;
+                    border: 0;
+                    color: #fff;
+                    background-color: #b8a269;
+                    letter-spacing: 2px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    &:hover {
+                        color: #111111;
+                        background-color: #fff;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    & .footer-text {
+        
+    }
+}
